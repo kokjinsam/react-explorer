@@ -8,7 +8,6 @@ meteor-base             # Packages every Meteor app needs to have
 mobile-experience       # Packages for a great mobile UX
 mongo                   # The database Meteor supports right now
 session                 # Client-side reactive dictionary for your app
-jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
 
 standard-minifiers      # JS/CSS minifiers run for production mode
@@ -17,3 +16,8 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 kadira:flow-router
 static-html
+fourseven:scss
+reactive-dict
+kadira:dochead
+check
+accounts-password

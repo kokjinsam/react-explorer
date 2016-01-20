@@ -4,11 +4,11 @@ I'm in process of learning how to properly use React and other stuffs in Meteor 
 
 ## Technologies / Libraries
 
-- [ ] react
-- [ ] react-dom
+- [X] react
+- [X] react-dom
 - [ ] react-komposer
 - [ ] react-simple-di
-- [ ] react-mounter
+- [X] react-mounter
 - [ ] react-intl
 - [ ] react-toolbox
 - [ ] react-addons-css-transition-group

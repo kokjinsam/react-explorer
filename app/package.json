@@ -9,9 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "normalize-scss": "^4.0.3",
+    "normalize.css": "^3.0.3",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
-    "react-mounter": "^1.0.0"
+    "react-komposer": "^1.2.0",
+    "react-mounter": "^1.0.0",
+    "react-simple-di": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",

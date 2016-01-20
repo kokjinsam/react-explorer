@@ -1,0 +1,61 @@
+$spacing: 8px;
+
+.cover {
+  min-height: 300px;
+  height: 90vh;
+  background-color: #ff6347;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.section {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing*3 $spacing*2;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.odd {
+  background-color: #ffe0b2;
+}
+
+.even {
+  background-color: #ffab40;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.touch-target {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: $spacing*11;
+  min-height: $spacing*5;
+  padding: 0px $spacing;
+  margin: $spacing/2 $spacing;
+  background-color: #ff6d00;
+  border-radius: 3px;
+  color: #fff3e0;
+}
