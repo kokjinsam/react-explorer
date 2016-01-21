@@ -1,8 +1,6 @@
 # React Explorer
 
-I'm in process of learning how to properly use React and other stuffs in Meteor 1.3. I have a set of libraries and technologies with some goals that I want to learn and explore.
-
-## Libraries
+## Libraries to be explored
 
 - [X] react
 - [X] react-dom
@@ -12,7 +10,7 @@ I'm in process of learning how to properly use React and other stuffs in Meteor 
 - [X] material-ui
 - [ ] react-intl
 - [ ] react-toolbox
-- [ ] react-motions
+- [ ] react-motion
 - [ ] react-addons-css-transition-group
 
 ## Some of my Goals
