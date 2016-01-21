@@ -1,10 +1,11 @@
 import React from 'react';
+import WhoAreYou from '../../containers/who-are-you';
 
 class RequireLogin extends React.Component {
   // temporary solution
   notLoggedIn() {
     // Do something if user is not logged in
-    return <p>Not Authorized to see this</p>;
+    return <WhoAreYou />;
   }
 
   getContent() {
