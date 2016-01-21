@@ -1,5 +1,12 @@
 # React Explorer
 
+## Start
+```
+npm install
+meteor
+```
+Then go to localhost:3000
+
 ## Libraries to be explored
 
 - [X] react
