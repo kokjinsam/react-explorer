@@ -11,10 +11,15 @@ class WhoAreYou extends React.Component {
 
   submit(e) {
     e.preventDefault();
+
+    let email = e.target[0].value;
+    let password = e.target[1].value;
+
+    /* need client side checking */
+
     const {login} = this.props;
 
-    login();
-    console.log('clicked submit');
+    login(email, password);
   }
 
   render() {

@@ -9,6 +9,7 @@ import AppHome from '../components/app-home/index.jsx';
 /* import containers here */
 import WhoAreYou from '../containers/who-are-you';
 import SignUp from '../containers/sign-up';
+import NormalQuiz from '../containers/normal-quiz';
 
 export const initRoutes = (MainLayoutCtx) => {
   FlowRouter.route('/', {
@@ -38,8 +39,26 @@ export const initRoutes = (MainLayoutCtx) => {
     }
   });
 
-  FlowRouter.route('/app', {
-    name: 'app',
+  FlowRouter.route('/quiz', {
+    name: 'quiz.home',
+    action() {
+      mount(MainLayoutCtx, {
+        content: () => (<AppHome />)
+      });
+    }
+  });
+
+  FlowRouter.route('/quiz/normal', {
+    name: 'quiz.normal',
+    action() {
+      mount(MainLayoutCtx, {
+        content: () => (<NormalQuiz />)
+      });
+    }
+  });
+
+  FlowRouter.route('/quiz/timed', {
+    name: 'quiz.timed',
     action() {
       mount(MainLayoutCtx, {
         content: () => (<AppHome />)

@@ -1,0 +1,26 @@
+$spacing: 8px;
+
+.box {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
+  min-height: 400px;
+  padding: $spacing $spacing;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.vertical {
+  flex-direction: column;
+}

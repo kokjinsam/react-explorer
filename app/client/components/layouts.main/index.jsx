@@ -69,7 +69,7 @@ class MainLayout extends React.Component {
               onTouchTap={this.handleClose}>Github</MenuItem>
         </LeftNav>
 
-        <div className="content">{this.props.content()}</div>
+        <main className="main">{this.props.content()}</main>
       </div>
     );
   }

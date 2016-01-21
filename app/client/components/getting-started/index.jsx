@@ -48,7 +48,7 @@ const GettingStarted = () => (
       <RaisedButton
         label="Let's Play"
         linkButton={true}
-        href="/app"
+        href="/quiz/normal"
         primary={true} />
       <FlatButton
         linkButton={true}

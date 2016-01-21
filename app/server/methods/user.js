@@ -8,8 +8,8 @@ Meteor.methods({
     check(password, String);
 
     let newUserId = Accounts.createUser({
-      email: email,
-      password: password
+      email,
+      password
     });
 
     if (newUserId) {

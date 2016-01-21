@@ -6,8 +6,8 @@ I'm in process of learning how to properly use React and other stuffs in Meteor 
 
 - [X] react
 - [X] react-dom
-- [ ] react-komposer
-- [ ] react-simple-di
+- [X] react-komposer
+- [X] react-simple-di
 - [X] react-mounter
 - [ ] react-intl
 - [ ] react-toolbox
@@ -26,3 +26,9 @@ I'm in process of learning how to properly use React and other stuffs in Meteor 
 - [ ] How do I manage local state and component state? (Mantra)
 - [ ] How do I allow user to manually change locale? (react-intl)
 - [ ] How to do SSR? [see this](https://github.com/mantrajs/mantra-sample-blog-app/issues/12)
+
+### LocalState
+- USER.LOGGED_IN (boolean) True if user is logged in. Same as currentUser
+- USER.LOGGING_IN (boolean) True if user is logging in. Same as loggingIn
+- USER.LOGGED_IN_ERROR (string) Null if there's no error
+- USER.SIGN_UP_ERROR (string) Null if there's no error
