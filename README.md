@@ -2,6 +2,7 @@
 
 ## Start
 ```
+cd app
 npm install
 meteor
 ```
