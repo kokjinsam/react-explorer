@@ -7,7 +7,7 @@ export default [
       'Facebook',
       'Google'
     ]
-  },{
+  }, {
     question: 'What is Mantra',
     answer: 'Mantra is a set of standards on how to architecture a Meteor app',
     choices: [
@@ -15,7 +15,7 @@ export default [
       'Mantra is a boilerplate',
       'Mantra is a code generator'
     ]
-  },{
+  }, {
     question: 'What do you need to know before diving into Mantra',
     answer: 'ES6, React, React Containers, Meteor Basics',
     choices: [
@@ -23,7 +23,7 @@ export default [
       'ES5, React, Store, RoR Basics',
       'ES5, Blaze, React Containers, Django Basics'
     ]
-  },{
+  }, {
     question: 'Which of the following is not part of the core components of Mantra',
     answer: 'Blaze as the UI',
     choices: [
@@ -31,7 +31,7 @@ export default [
       'State Management',
       'Dependency Injection'
     ]
-  },{
+  }, {
     question: 'Which of the following is not the main directories on the the server side',
     answer: 'actions',
     choices: [
@@ -39,7 +39,7 @@ export default [
       'methods',
       'publications'
     ]
-  },{
+  }, {
     question: 'Which of the following is the Client directory',
     answer: 'containers',
     choices: [

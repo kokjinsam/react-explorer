@@ -1,13 +1,13 @@
-import {Questions, Profiles} from '/libs/collections';
-import {Meteor} from 'meteor/meteor';
-import {check} from 'meteor/check';
+import { Questions, Profiles } from '/libs/collections';
+import { Meteor } from 'meteor/meteor';
+import { check } from 'meteor/check';
 
-const hasAnswered = (userId, questionId) => {
-  return Profiles.findOne({
+const hasAnswered = (userId, questionId) => (
+  Profiles.findOne({
     userId,
     questionId
-  });
-};
+  })
+);
 
 Meteor.methods({
   'questions.validate'(questionId, userAnswer) {
@@ -18,7 +18,7 @@ Meteor.methods({
       throw new Meteor.Error(400, 'Please login');
     }
 
-    let userId = Meteor.userId();
+    const userId = Meteor.userId();
 
     // check if user has already answered the question
     if (hasAnswered(userId, questionId)) {
@@ -34,7 +34,7 @@ Meteor.methods({
     // if answer is correct insert user profile
     if (questionAnswer === userAnswer) {
       result = Profiles.upsert(
-        {userId},
+        { userId },
         {
           $push: {
             questions: questionId
@@ -54,16 +54,16 @@ Meteor.methods({
     }
 
     const userId = Meteor.userId();
-    const userProfile = Profiles.find({userId},{limit: 1}).fetch();
+    const userProfile = Profiles.find({ userId }, { limit: 1 }).fetch();
 
     let question = null;
     if (userProfile && userProfile.length >= 1) {
       // grab question
       const answeredQuestion = userProfile[0].questions;
-      question = Questions.find({_id: { $nin: answeredQuestion}},{limit: 1}).fetch();
+      question = Questions.find({ _id: { $nin: answeredQuestion } }, { limit: 1 }).fetch();
     } else {
       // get any question
-      question = Questions.find({},{limit: 1}).fetch();
+      question = Questions.find({}, { limit: 1 }).fetch();
     }
 
     let mutatedQuestion = null;

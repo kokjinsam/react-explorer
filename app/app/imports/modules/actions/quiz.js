@@ -1,8 +1,8 @@
-import {Session} from 'meteor/session';
+import { Session } from 'meteor/session';
 
 export default {
-  getQuestion({Meteor, LocalState}) {
-    Meteor.call('questions.get',(err, res) => {
+  getQuestion({ Meteor, LocalState }) {
+    Meteor.call('questions.get', (err, res) => {
       if (err) {
         LocalState.set('QUIZ.GET_QUESTION_ERROR', err.reason);
         return;
@@ -18,11 +18,11 @@ export default {
     });
   },
 
-  validateAnswer({Meteor, LocalState}, questionId, userAnswer) {
+  validateAnswer({ Meteor, LocalState }, questionId, userAnswer) {
     /* client side validation here */
 
     Meteor.call('questions.validate', questionId, userAnswer, (err, res) => {
-      if (err ) {
+      if (err) {
         if (err.reason == 'Wrong answer') {
           LocalState.set('QUIZ.CORRECT_ANSWER', false);
         } else {

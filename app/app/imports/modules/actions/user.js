@@ -1,5 +1,5 @@
 export default {
-  signUp({Meteor, LocalState, FlowRouter}, email, password) {
+  signUp({ Meteor, LocalState, FlowRouter }, email, password) {
     Meteor.call('user.signUp', email, password, (err) => {
       if (err) {
         return LocalState.set('USER.SIGN_UP_ERROR', err.message);
@@ -12,7 +12,7 @@ export default {
     });
   },
 
-  login({Meteor, LocalState, FlowRouter}, email, password) {
+  login({ Meteor, LocalState, FlowRouter }, email, password) {
     Meteor.loginWithPassword(email, password, (err) => {
       if (err) {
         LocalState.set('USER.LOGGED_IN_ERROR', err.message);

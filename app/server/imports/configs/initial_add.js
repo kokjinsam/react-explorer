@@ -1,4 +1,4 @@
-import {Questions} from '/libs/collections';
+import { Questions } from '/libs/collections';
 import Seeds from './seed';
 
 export default () => {
